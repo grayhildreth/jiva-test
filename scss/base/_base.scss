@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  height: 100vh;
+}
+
+p {
+  font-family: $main-font;
+  color: $font-color;
+  font-size: 17px;
+}
+
+h1 {
+  font-family: $title-font;
+  letter-spacing: 1px;
+}
+
+.content {
+  min-height: calc(100vh - 12em);
+}
+
+.page-title h1 {
+  margin: 2em 0 1em;
+  text-align: center;
+  font-size: 2em;
+  font-family: $title-font;
+  letter-spacing: 1px;
+}

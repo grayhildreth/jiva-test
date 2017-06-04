@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh; }
+
+p {
+  font-family: "Abel", sans-serif;
+  color: #999999;
+  font-size: 17px; }
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px; }
+
+.content {
+  min-height: calc(100vh - 12em); }
+
+.page-title h1 {
+  margin: 2em 0 1em;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 12em;
+  background-color: #F3F3F3;
+  justify-content: center;
+  align-items: center;
+  color: #1aa99f;
+  font-family: "Abel", sans-serif; }
+  .footer p {
+    margin: 1em; }
+
+.social ul {
+  display: flex; }
+  .social ul li {
+    margin: 1em; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  height: 45px; }
+
+.nav-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  background-color: #313030; }
+
+.nav-container ul {
+  display: flex;
+  padding-right: 1em;
+  list-style-type: none;
+  color: #1aa99f; }
+
+.nav-container li {
+  padding-left: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #1aa99f;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-left: 4.7em; }
+  .nav-container li a {
+    text-decoration: none;
+    color: #1aa99f;
+    line-spacing: 1px; }
+  .nav-container li a:hover {
+    color: gray; }
+
+#nav-title {
+  margin-left: 1em; }
+  #nav-title img:hover {
+    -webkit-filter: grayscale(100%); }
+
+.menu-button {
+  cursor: pointer;
+  margin-right: 1em;
+  color: #1aa99f;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px; }
+
+#mobile-menu {
+  max-width: 700px;
+  background-color: #313030;
+  display: flex;
+  position: relative; }
+
+#mobile-menu ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  list-style: none; }
+
+#mobile-menu li {
+  padding: 1em 0;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px; }
+
+#mobile-menu a {
+  text-decoration: none;
+  color: #1aa99f;
+  letter-spacing: 1px; }
+
+.nav-container > .desktop-menu {
+  display: none; }
+
+@media screen and (min-width: 700px) {
+  .menu-button {
+    display: none; }
+
+  .nav-container > .desktop-menu {
+    display: flex; } }
+@media screen and (max-width: 999px) {
+  .video {
+    display: none; }
+
+  .home {
+    display: flex;
+    height: 95vh;
+    width: 100vw;
+    background-image: url("../img/main-background.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0; }
+
+  section .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    section .home img {
+      width: 250px;
+      margin-bottom: 2em; }
+    section .home p {
+      font-family: "Abel", sans-serif;
+      font-size: 2.2em;
+      color: white;
+      text-align: center;
+      letter-spacing: 10px; } }
+@media screen and (min-width: 1000px) {
+  .video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+
+  .video iframe {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%; }
+
+  .video-overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .hero-content img {
+      margin-bottom: 2em;
+      align-self: center; }
+    .hero-content p {
+      font-family: cursive;
+      font-size: 2.2em;
+      color: white;
+      text-align: center;
+      letter-spacing: 10px; } }
+section .about {
+  display: flex;
+  margin: 6em 3em;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  section .about h1 {
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 1em; }
+  section .about p {
+    font-size: 17px;
+    line-height: 1.5em;
+    font-family: "Abel", sans-serif;
+    color: #999999;
+    text-align: justify;
+    max-width: 600px; }
+
+section .about2 {
+  display: flex;
+  height: 50vh;
+  max-width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/headsets_02.jpg"); }
+
+section .what-we-do {
+  display: flex;
+  margin: 6em 3em 0;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  section .what-we-do h1 {
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 1em; }
+  section .what-we-do p {
+    font-size: 17px;
+    line-height: 1.5em;
+    font-family: "Abel", sans-serif;
+    color: #999999;
+    text-align: justify;
+    max-width: 600px; }
+
+section .services {
+  display: flex;
+  margin: 0em 3em 6em 3em;
+  flex-direction: column; }
+  section .services h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 1px; }
+  section .services p {
+    font-family: "Abel", sans-serif;
+    font-size: 17px;
+    line-height: 1.5em;
+    text-align: justify;
+    max-width: 600px;
+    margin-top: 1em; }
+  section .services .service-title {
+    color: #1aa99f;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px; }
+
+.service-icon {
+  display: flex;
+  margin-top: 5em;
+  flex-direction: column;
+  align-items: center; }
+  .service-icon img {
+    align-self: center;
+    justify-content: center;
+    margin: 1em 0;
+    width: 96px;
+    cursor: pointer; }
+
+.trans {
+  transition: all .5s ease-in-out; }
+
+.trans:hover {
+  transform: scale(1.25); }
+
+.text-drop {
+  display: none; }
+
+@media screen and (min-width: 700px) {
+  section .services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 0em 3em 3em 3em; }
+
+  .icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+
+  .service-paragraphs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6em; }
+
+  .text-drop p {
+    font-family: "Abel", sans-serif;
+    font-size: 17px;
+    line-height: 1.5em;
+    text-align: justify;
+    max-width: 600px; }
+
+  .mobile-copy {
+    display: none; }
+
+  .text-drop {
+    display: block; }
+
+  section .about2 {
+    display: flex;
+    height: 50vh;
+    max-width: 100vw;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/headsets_02.jpg"); } }
+.team-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 4em 2em;
+  font-family: "Abel", sans-serif; }
+  .team-card .jay-photo img {
+    width: 300px;
+    height: 300px; }
+  .team-card .steve-photo img {
+    width: 300px;
+    height: 300px; }
+  .team-card h1 {
+    font-size: 1.5em;
+    color: #1aa99f;
+    text-align: center;
+    padding: 1em 0;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none; }
+
+.team-card p {
+  text-align: justify;
+  font-family: "Abel", sans-serif;
+  font-size: 17px;
+  line-height: 1.5em; }
+
+.team-content ul {
+  display: flex; }
+  .team-content ul li {
+    padding: 1em 1em 0 0; }
+
+@media screen and (min-width: 700px) {
+  .team-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .team-card .team-content {
+      margin-left: 3em;
+      align-self: flex-end; }
+
+  .team-content p {
+    font-size: 17px;
+    line-height: 1.5em;
+    max-width: 500px; }
+
+  .team-content h1 {
+    text-align: left; } }
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  position: relative;
+  width: 80%;
+  margin: 3em 0 5em; }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .75s ease;
+  background-color: #000; }
+
+.container:hover .overlay {
+  opacity: 0.75; }
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+@media screen and (min-width: 700px) {
+  .work {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+
+  .container {
+    position: relative;
+    width: 40%;
+    margin: 3em 0 5em; } }
+section .contact-info {
+  display: flex;
+  margin: 3em 3em 5em 3em;
+  flex-direction: column;
+  align-items: center; }
+  section .contact-info h1 {
+    font-family: "Abel", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 10px; }
+  section .contact-info p {
+    font-size: 17px;
+    line-height: 1.5em;
+    font-family: "Abel", sans-serif;
+    color: #404040; }
+
+.contact-detail {
+  display: flex;
+  margin: 2em 0;
+  flex-direction: column;
+  align-items: center; }
+  .contact-detail img {
+    align-self: center;
+    justify-content: center;
+    margin: 1em 0; }
+  .contact-detail p:hover {
+    color: gray; }
+  .contact-detail a {
+    color: #404040; }
+    .contact-detail a:hover {
+      color: gray; }
+
+@media screen and (min-width: 700px) {
+  section .contact-info {
+    display: flex;
+    margin: 3em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+
+  .line {
+    height: 200px;
+    width: 3px;
+    background-color: #1aa99f; }
+
+  .contact-detail {
+    margin: 4em; } }
+/* external css: flickity.css */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.carousel img {
+  display: block;
+  height: 200px;
+  margin-right: 10px; }
+
+@media screen and (min-width: 700px) {
+  .carousel img {
+    height: 400px; } }
+.carousel-container {
+  margin-bottom: 4em; }
+
+.tech-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 3em 3em 4em;
+  justify-content: center;
+  align-items: center; }
+  .tech-detail p {
+    font-size: 17px;
+    line-height: 1.5em;
+    font-family: "Abel", sans-serif;
+    text-align: justify;
+    max-width: 700px; }
+
+.milestone-video {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em; }
+
+.project-details {
+  margin: 3em 2em 0;
+  display: flex;
+  font-family: "Abel", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .project-details a {
+    color: #404040; }
+    .project-details a:hover {
+      color: gray; }
+  .project-details p {
+    font-size: 17px;
+    line-height: 1.5em;
+    font-family: "Abel", sans-serif;
+    color: #404040;
+    text-align: left;
+    max-width: 600px; }
+  .project-details .detail-color {
+    color: #1aa99f; }
+
+.project-info {
+  margin: 3em 3em 6em;
+  display: flex;
+  font-family: "Abel", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .project-info p {
+    font-size: 17px;
+    line-height: 1.5em;
+    font-family: "Abel", sans-serif;
+    text-align: justify;
+    max-width: 600px; }
+
+/*# sourceMappingURL=application.css.map */

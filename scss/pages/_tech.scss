@@ -1,0 +1,49 @@
+// tech
+
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.carousel img {
+  display: block;
+  height: 200px;
+  margin-right: 10px;
+}
+
+@media screen and ( min-width: 700px ) {
+  .carousel img {
+    height: 400px;
+  }
+}
+
+// .carousel-cell {
+//   width: 66%;
+//   height: auto;
+//   margin-right: 10px;
+//   img {
+//     height: auto;
+//     width: 100%;
+//   }
+// }
+
+.carousel-container {
+  margin-bottom: 4em;
+}
+
+.tech-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 3em 3em 4em;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 17px;
+    line-height: 1.5em;
+    font-family: $main-font;
+    text-align: justify;
+    max-width: 700px;
+  }
+}
