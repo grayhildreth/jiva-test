@@ -147,7 +147,7 @@ section .what-we-do {
     font-family: $main-font;
     color: $font-color;
     text-align: justify;
-    max-width: 600px;
+    max-width: 700px;
   }
 }
 
@@ -167,7 +167,7 @@ section .services {
     font-size: 17px;
     line-height: 1.5em;
     text-align: justify;
-    max-width: 600px;
+    max-width: 700px;
     margin-top: 1em;
   }
   .service-title {
@@ -233,7 +233,7 @@ section .services {
     font-size: 17px;
     line-height: 1.5em;
     text-align: justify;
-    max-width: 600px;
+    max-width: 700px;
   }
   .mobile-copy {
     display: none;
@@ -241,7 +241,7 @@ section .services {
   .text-drop {
     display: block;
   }
-  section .about2 {
+  .about2 {
     display: flex;
     // width: 100vw;
     // height: 50vh;
