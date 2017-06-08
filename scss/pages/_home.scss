@@ -4,32 +4,32 @@
   .video {
     display: none;
   }
-.home {
-  display: flex;
-  height: 95vh;
-  width: 100vw;
-  background-image: url("../img/main-background.jpg");
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-}
+  .home {
+    display: flex;
+    height: 95vh;
+    width: 100vw;
+    background-image: url("../img/main-background.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+  }
 
-section .home {
+  section .home {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-      img {
-        width: 250px;
-        margin-bottom: 2em;
-      }
-      p {
-        font-family: $main-font;
-        font-size: 2.2em;
-        color: white;
-        text-align: center;
-        letter-spacing: 10px;
-      }
+    img {
+      width: 250px;
+      margin-bottom: 2em;
+    }
+    p {
+      font-family: $main-font;
+      font-size: 2.2em;
+      color: white;
+      text-align: center;
+      letter-spacing: 10px;
+    }
   }
 }
 
@@ -70,28 +70,28 @@ section .home {
         margin-bottom: 2em;
         align-self: center;
       }
-      p {
-        font-family: $main-font;
-        font-size: 2.2em;
-        color: white;
-        text-align: center;
-        letter-spacing: 10px;
-      }
+      // p {
+      //   font-family: $main-font;
+      //   font-size: 2.2em;
+      //   color: white;
+      //   text-align: center;
+      //   letter-spacing: 10px;
+      // }
     }
-}
+  }
 
   // about
 
   section .about {
-  display: flex;
-  // max-width: 800px;
-  // width: 100vw;
-  margin: 6em 3em;
-  font-family: $title-font;
-  // background-color: white;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    // max-width: 800px;
+    // width: 100vw;
+    margin: 6em 3em;
+    font-family: $title-font;
+    // background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     h1 {
       font-size: 2em;
       text-align: center;
@@ -107,148 +107,148 @@ section .home {
       text-align: justify;
       max-width: 600px;
     }
-}
-
-// .about2 img {
-//   max-width: 100vw;
-//   max-height: auto;
-// }
-section .about2 {
-  display: flex;
-  height: 50vh;
-  max-width: 100vw;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('../img/maui-aerial.jpg');
-}
-
-
-// services
-
-section .what-we-do {
-  display: flex;
-  margin: 6em 3em 0;
-  font-family: $title-font;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  h1 {
-    font-size: 2em;
-    text-align: center;
-    letter-spacing: 1px;
-    margin-bottom: 1em;
   }
-  p {
-    font-size: 17px;
-    line-height: 1.5em;
-    font-family: $main-font;
-    color: $font-color;
-    text-align: justify;
-    max-width: 700px;
-  }
-}
 
-section .services {
-  display: flex;
-  // width: 100vw;
-  margin: 0em 3em 6em 3em;
-  flex-direction: column;
-  h1 {
-    font-family: $title-font;
-    font-size: 2em;
-    text-align: center;
-    letter-spacing: 1px;
-  }
-  p{
-    font-family: $main-font;
-    font-size: 17px;
-    line-height: 1.5em;
-    text-align: justify;
-    max-width: 700px;
-    margin-top: 1em;
-  }
-  .service-title {
-    color: $jiva-blue;
-    font-family: $title-font;
-    letter-spacing: 1px;
-  }
-}
-
-.service-icon {
-  display: flex;
-  margin-top: 5em;
-  flex-direction: column;
-  align-items: center;
-  img {
-    align-self: center;
-    justify-content: center;
-    margin: 1em 0;
-    width: 96px;
-    cursor: pointer;
-  }
-}
-
-.trans{
-  transition: all .5s ease-in-out;
-}
-.trans:hover {
-  transform: scale(1.25);
-}
-
-.icon-grow {
-}
-
-.text-drop {
-  display: none;
-}
-
-@media screen and (min-width: 700px) {
-  section .services {
+  // .about2 img {
+  //   max-width: 100vw;
+  //   max-height: auto;
+  // }
+  section .about2 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-    margin: 0em 3em 3em 3em;
-  }
-  .icon-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .service-paragraphs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 6em;
-  }
-  .text-drop p {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    font-family: $main-font;
-    font-size: 17px;
-    line-height: 1.5em;
-    text-align: justify;
-    max-width: 700px;
-  }
-  .mobile-copy {
-    display: none;
-  }
-  .text-drop {
-    display: block;
-  }
-  .about2 {
-    display: flex;
-    // width: 100vw;
-    // height: 50vh;
     height: 50vh;
     max-width: 100vw;
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../img/maui-aerial.jpg');
   }
-}
+
+
+  // services
+
+  section .what-we-do {
+    display: flex;
+    margin: 6em 3em 0;
+    font-family: $title-font;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      letter-spacing: 1px;
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 17px;
+      line-height: 1.5em;
+      font-family: $main-font;
+      color: $font-color;
+      text-align: justify;
+      max-width: 700px;
+    }
+  }
+
+  section .services {
+    display: flex;
+    // width: 100vw;
+    margin: 0em 3em 6em 3em;
+    flex-direction: column;
+    h1 {
+      font-family: $title-font;
+      font-size: 2em;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    p{
+      font-family: $main-font;
+      font-size: 17px;
+      line-height: 1.5em;
+      text-align: justify;
+      max-width: 700px;
+      margin-top: 1em;
+    }
+    .service-title {
+      color: $jiva-blue;
+      font-family: $title-font;
+      letter-spacing: 1px;
+    }
+  }
+
+  .service-icon {
+    display: flex;
+    margin-top: 2em;
+    flex-direction: column;
+    align-items: center;
+    img {
+      align-self: center;
+      justify-content: center;
+      margin: 1em 0;
+      width: 96px;
+      cursor: pointer;
+    }
+  }
+
+  .trans{
+    transition: all .5s ease-in-out;
+  }
+  .trans:hover {
+    transform: scale(1.25);
+  }
+
+  .icon-grow {
+  }
+
+  .text-drop {
+    display: none;
+  }
+
+  @media screen and (min-width: 700px) {
+    section .services {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+      margin: 0em 3em 3em 3em;
+    }
+    .icon-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .service-paragraphs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 6em;
+    }
+    .text-drop p {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      font-family: $main-font;
+      font-size: 17px;
+      line-height: 1.5em;
+      text-align: justify;
+      max-width: 700px;
+    }
+    .mobile-copy {
+      display: none;
+    }
+    .text-drop {
+      display: block;
+    }
+    .about2 {
+      display: flex;
+      // width: 100vw;
+      // height: 50vh;
+      height: 50vh;
+      max-width: 100vw;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('../img/maui-aerial.jpg');
+    }
+  }
